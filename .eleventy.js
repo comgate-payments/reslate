@@ -5,7 +5,7 @@ const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 
 function slugify(s) {
-    return encodeURIComponent(
+    return (
         String(s).trim().toLowerCase()
         .replace(/[\(\)]/g, '')
         .replace(/\s+/g, '-')
